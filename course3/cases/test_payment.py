@@ -6,7 +6,7 @@ from course3.constants import Constants
 from course3.yaml_driver import read_yaml
 
 
-@pytest.mark.parametrize("data", read_yaml.get_yaml_data('/Users/marongyao/PycharmProjects/Assignment/course3/test_data/payment_data.yaml'))
+@pytest.mark.parametrize("data", read_yaml.get_yaml_data('./course3/test_data/payment_data.yaml'))
 def test_payment(get_token, data):
     api_key = APIKey()
     params = {

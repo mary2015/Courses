@@ -9,7 +9,7 @@ from course3.yaml_driver import read_yaml
 
 @allure.step("the whole process")
 @pytest.mark.parametrize("expected_data", read_yaml.get_yaml_data(
-    "/Users/marongyao/PycharmProjects/Assignment/course3/expected_data/cart_details.yaml"))
+    "./course3/expected_data/cart_details.yaml"))
 def test_whole_process(get_token, expected_data):
     with allure.step("add goods into cart"):
         api_key = APIKey()
