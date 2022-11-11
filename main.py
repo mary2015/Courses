@@ -17,7 +17,7 @@ def print_hi(name):
 if __name__ == '__main__':
     print_hi('PyCharm')
     pytest.main(['-v', '--alluredir', './result', './course3/cases', '--clean-alluredir'])
-    os.system('allure generate ./result/ -o ./report_allure/ --clean')
+    os.system('/opt/homebrew/bin/allure generate ./result/ -o ./report_allure/ --clean')
 
 
 
