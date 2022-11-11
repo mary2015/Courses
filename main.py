@@ -16,8 +16,8 @@ def print_hi(name):
 # Press the green button in the gutter to run the script.
 if __name__ == '__main__':
     print_hi('PyCharm')
-    pytest.main(['-v', '--alluredir', './result', './course3/cases', '--clean-alluredir'])
-    os.system('/opt/homebrew/bin/allure generate ./result/ -o ./report_allure/ --clean')
+    pytest.main(['-v', '--alluredir', './allure_results', './course3/cases', '--clean-alluredir'])
+    os.system('/opt/homebrew/bin/allure generate ./allure_results/ -o ./allure_report/ --clean')
 
 
 
